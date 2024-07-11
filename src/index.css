@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Helvetica;
+  src: url(./assets/Helvetica-Font/Helvetica.ttf);
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: Helvetica;
+}
+
+img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Disable right-clicking */
+  /* user-drag: none; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Made with 💙 by _____ */
