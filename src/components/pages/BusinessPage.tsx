@@ -48,8 +48,8 @@ const faqsList2 = [
 const BusinessPage = () => {
   return (
     <div className="bg-[#FAF8F5]">
-      <section className="relative">
-        <div className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[407px] sm:min-h-[507px] lg:h-screen relative">
+      <main className="relative">
+        <section className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[407px] sm:min-h-[507px] lg:h-screen relative">
           <div className="max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col gap-12 lg:gap-20 justify-center items-center pt-16 md:pt-24 lg:pt-36">
             <span className="flex flex-col gap-3 items-center">
               <h1 className="text-[32px] lg:text-[64px] leading-[48px] lg:leading-[80px] text-white font-bold max-w-[848px] text-center">
@@ -62,7 +62,7 @@ const BusinessPage = () => {
 
             <Link
               to="#"
-              className="text-base lg:text-[24px] text-[#285581] font-bold flex gap-4 items-center active:scale-95 duration-200 bg-gradient-to-r from-[#FFE0B2] to-[#FFCC80] rounded-[6px] py-[16px] px-[24px] border border-[#FFE0B2] w-max"
+              className="text-base lg:text-[24px] text-[#285581] font-bold flex gap-4 items-center active:scale-95 duration-200 bg-gradient-to-r from-[#FFE0B2] to-[#FFCC80] rounded-[6px] py-[16px] px-[24px] border border-[#FFE0B2] w-max z-10"
             >
               Reserve online
               <FaArrowRightLong className="size-5" />
@@ -78,8 +78,8 @@ const BusinessPage = () => {
               //   max-w-[1145px]
             />
           </div>
-        </div>{" "}
-        <div className="absolute -bottom-36 w-full px-4 md:px-0">
+        </section>{" "}
+        <section className="md:-top-28 relative md:bottom-0 bottom-16 w-full px-4 md:px-0">
           <div className="bg-white border border-[#28558126] rounded-[16px] p-8 max-w-screen-lg mx-auto flex flex-col lg:flex-row gap-[24px] lg:gap-[64px] items-center">
             <span className="cursor-pointer hover:scale-105 duration-200">
               <img src={IVideo} alt="IVideo" />
@@ -92,20 +92,20 @@ const BusinessPage = () => {
               </p>
             </span>
           </div>
-        </div>
-      </section>
-      <section className="max-w-screen-xl mx-auto px-4 md:px-6 py-16 lg:py-24 lg:pt-60 flex flex-col gap-[54px] justify-center items-center">
+        </section>
+      </main>
+      <section className="max-w-screen-xl mx-auto p-4 md:px-6  flex flex-col space-y-7 justify-center items-center">
         <h2 className="text-[#285581] text-[24px] lg:text-[40px] leading-[32px] lg:leading-[56px] font-bold text-center">
           About our Killingworth site
         </h2>
 
         {/* map */}
-        <div className="bg-white rounded-[12px] border border-[#28558126] flex lg:min-w-[472px]">
+        <div className=" rounded-[12px]  flex lg:min-w-[472px] ">
           <div className="hidden lg:block">
             <img src={Map} alt="Map" className="rounded-l-[12px]" />
           </div>
 
-          <div className="px-[56px] py-[32px] lg:px-[64px] lg:py-[32px] text-[#285581] flex flex-col gap-8 justify-center">
+          <div className="px-[56px] py-[32px] lg:px-[64px] lg:py-[32px] text-[#285581] flex flex-col gap-8 bg-white shadow">
             <div>
               <span className="flex gap-4 items-center">
                 <IoLocationOutline className="size-5" />
@@ -208,7 +208,7 @@ const BusinessPage = () => {
       <div className="w-full border border-gray-200" />
       <Features />
       <div className="w-full border border-gray-200" />
-      <div className="bg-white flex flex-col spacey-6">
+      <div className=" flex flex-col spacey-6 bg-gradient-to-b from-[#ffffff] to-[#f6f2f2]">
         <Form />
         <Rating title="A Killingworth self storage location rated" />
       </div>{" "}

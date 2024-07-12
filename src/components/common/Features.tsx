@@ -14,7 +14,7 @@ const Features = () => {
     <section className="bg-white">
       <div className="max-w-screen-xl mx-auto px-4 md:px-6 py-16  flex flex-col">
         <div className=" flex flex-col space-y-7 justify-center items-center">
-          <div className="flex items-center w-full justify-between">
+          <div className="flex flex-col lg:flex-row gap-4 lg:items-center w-full justify-between">
             <span>
               <p className="text-[#285581] text-[18px] lg:text-[24px] leading-[28px] lg:leading-[32px]">
                 Why store with us in Killingworth?
@@ -123,6 +123,7 @@ const Features = () => {
             </div>
           </div>
         </div>
+
         <div className="flex justify-between border bg-[#FAF8F5] relative mt-14">
           <div className="p-10 flex flex-col space-y-3">
             <h2 className="font-bold text-[#285581] md:text-[24px] text-[16px] leading-[31px]">
@@ -144,7 +145,7 @@ const Features = () => {
               See all reviews
             </Link>
           </div>
-          <img src={reviews} alt="" />
+          <img src={reviews} alt="" className="hidden lg:block" />
           <div className="absolute  left-12 -top-4">
             <svg
               width="38"
