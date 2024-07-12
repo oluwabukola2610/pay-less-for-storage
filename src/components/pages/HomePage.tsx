@@ -12,12 +12,13 @@ import Rating from "../common/Rating";
 import Container from "../../assets/images/container.png";
 import Ruler from "../../assets/images/Ruler.png";
 import Vector2 from "../../assets/Vector2";
+import Founded from "../common/Founded";
 
 const HomePage = () => {
   return (
     <div className="bg-[#FAF8F5]">
       <main className="relative">
-        <section className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[407px] sm:min-h-[507px] xl:h-screen relative">
+        <section className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[377px] sm:min-h-[507px] xl:h-screen relative">
           <div className="max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col gap-12 lg:gap-20 pt-16 md:pt-20">
             <h1 className="text-[32px] lg:text-[64px] leading-[48px] lg:leading-[80px] text-white font-bold">
               Self Storage <br className="hidden lg:block" />
@@ -33,7 +34,6 @@ const HomePage = () => {
             </Link>
           </div>
 
-          {/* City Image */}
           <div className="absolute bottom-0 w-full flex justify-center">
             <img
               src={City}
@@ -95,7 +95,7 @@ const HomePage = () => {
           </div>
         </section>
       </main>
-      <section className="max-w-screen-xl mx-auto px-4 md:px-6 py-16  flex flex-col space-y-7">
+      <section className="max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col space-y-7">
         <div className="flex flex-col gap-4 md:flex-row justify-between">
           <div className="flex flex-col space-y-3 items-start w-full md:max-w-[690px]">
             <h2 className="md:text-[40px] text-[26px] text-[#285581] relative">
@@ -161,7 +161,7 @@ const HomePage = () => {
       <section className="max-w-screen-xl mx-auto px-4 md:px-6 py-16  flex flex-col space-y-7 justify-center items-center">
         <h2 className="md:text-[40px] text-[24px] text-[#285581] leading-[32px] font-bold relative">
           I’m looking for{" "}
-          <Vector className="absolute left-12 top-full -mt-1 md:w-[150px] w-[130px]" />{" "}
+          <Vector className="absolute md:left-12 top-full -mt-1 md:w-[150px] w-[130px]" />{" "}
         </h2>
         <div className="flex flex-col md:flex-row gap-12 w-full justify-center px-4">
           <div className="lg:w-[457px] bg-white p-4 rounded-md flex flex-col items-center border border-gray-200 w-full space-y-3">
@@ -180,8 +180,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* gradient bg */}
-        <div className="relative bg-gradient-to-r from-[#4680B9] to-[#386694] w-full max-w-screen-lg mx-auto rounded-[12px] p-[40px] min-h-[248px]">
+        <div className="relative bg-gradient-to-r from-[#4680B9] to-[#386694] w-full rounded-[12px] flex justify-center items-center min-h-[248px]">
           <div className="flex flex-col gap-6 items-center max-w-[464px] mx-auto text-white text-center pt-8">
             <h2 className="text-[24px] leading-[32px] font-bold">
               Not sure what{" "}
@@ -212,6 +211,9 @@ const HomePage = () => {
       </section>
       <Features />
       <div className="w-full border border-gray-200" />
+      <div className="bg-white py-16">
+        <Founded />
+      </div>
       <div className=" flex flex-col spacey-6 bg-gradient-to-b from-[#ffffff] to-[#f6f2f2]">
         <Rating title="Self storage rated" />
       </div>

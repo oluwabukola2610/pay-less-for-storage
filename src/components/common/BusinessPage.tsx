@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import Rating from "../common/Rating";
 import Features from "../common/Features";
 import Form from "../common/Form";
-import StorageUnits from "../common/StorageUnits";
+import StorageUnits from "../StorageUnits";
 
 const faqsList1 = [
   {
@@ -50,7 +50,7 @@ const BusinessPage = () => {
   return (
     <div className="bg-[#FAF8F5]">
       <main className="relative">
-        <section className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[327px] sm:min-h-[507px] lg:h-screen relative">
+        <section className="bg-gradient-to-r from-[#4680B9] to-[#386694] min-h-[407px] sm:min-h-[507px] lg:h-screen relative">
           <div className="max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col gap-12 lg:gap-20 justify-center items-center pt-16 md:pt-24 lg:pt-36">
             <span className="flex flex-col gap-3 items-center">
               <h1 className="text-[32px] lg:text-[64px] leading-[48px] lg:leading-[80px] text-white font-bold max-w-[848px] text-center">
@@ -207,9 +207,11 @@ const BusinessPage = () => {
         </div>
       </section>
       <div className="w-full border border-gray-200" />
+      {/* Features */}
       <Features />
-      <div className="w-full border border-gray-200" />
+      {/* StorageUnits */}
       <StorageUnits />
+      <div className="w-full border border-gray-200" />
       <div className=" flex flex-col spacey-6 bg-gradient-to-b from-[#ffffff] to-[#f6f2f2]">
         <Form />
         <Rating title="A Killingworth self storage location rated" />
